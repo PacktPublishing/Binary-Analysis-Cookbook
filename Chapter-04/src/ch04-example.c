@@ -1,48 +1,40 @@
-/*
 
+
+
+
+
+/*
 ch04-example.c
 by Michael Born
-Date: 2019
-
+date: 2019
 */
-
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <math.h>
 #include <ctype.h>
+ 
+#define HIDEIT(a)	(a) ^ 0xab
+#define UNHIDE(a)	(a) ^= 0xab
 
+int main(void) {
 
-int main(int argc, char *argv[]) {
+	char hardCodedPassword[] = "HardCodedPassword";
+	char hiddenMessage[] ={ HIDEIT('S'), HIDEIT('e'), HIDEIT('c'), HIDEIT('r'), HIDEIT('e'), HIDEIT('t'), HIDEIT(' '), HIDEIT('M'), HIDEIT('e'), HIDEIT('s'), HIDEIT('s'), HIDEIT('a'), HIDEIT('g'), HIDEIT('e'), '\0' };
+	char userInput[sizeof(hardCodedPassword)];
 
-	if(argc == 3) {
-
-		char *key = argv[1];
-		char *pass = argv[2];
-		char *key2 = "rot13";
-		char *password = "TheBrownFoxJumpsThroughTheForest";
-		double x;
-		x = 14.0;
-		double y;
-		y = 41.0;
-		double z;
-		z = pow(x,y);
-		z = sqrt(x);
-		z = log(x);
-		z = fmod(x,y);
-
-		if((strcmp(key,key2) == 0) && (strcmp(pass,password) == 0)) {
-			printf("%s\n", "success");
+	printf("Please enter the password to unlock the hidden message: ");
+	scanf("%s", userInput);
+	if(strcmp(userInput,hardCodedPassword) == 0) {
+		for(int i = 0;i < sizeof(hiddenMessage);i++) {
+			if(hiddenMessage[i] != '\0') {
+				UNHIDE(hiddenMessage[i]);
+			}
 		}
-		else {
-			printf("%s\n", "failure, try again....");
-		}
+		printf("The hidden message is \'%s\'\n", hiddenMessage);
 	}
 	else {
-		printf("\n\nUsage: %s %s %s\n\n\n\n", argv[0], "<key>", "<password>");
+		printf("Wrong, run the program again...");
 	}
-
-
 	return 0;
 }

@@ -1,6 +1,6 @@
 ;--------------------------------------------------------------
 ;
-; ch05-bindshell32.nasm
+; ch06-bindshell32.nasm
 ; by Michael Born (@blu3gl0w13)
 ; Date: 2019
 ; 

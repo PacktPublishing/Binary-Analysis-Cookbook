@@ -1,6 +1,6 @@
 /* 
 
-xorlib.c - quick xor functions for demonstrating iteration
+libhider.c - quick xor functions for demonstrating iteration
 by Michael born
 Date 2019
 

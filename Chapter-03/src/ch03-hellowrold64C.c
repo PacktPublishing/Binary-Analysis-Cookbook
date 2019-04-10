@@ -1,6 +1,6 @@
 /*
 
-ch02-helloworld64.c
+ch03-helloworld64.c
 A program to print 
 'Hello, World!'
 to STDOUT

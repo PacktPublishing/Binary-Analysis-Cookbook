@@ -1,6 +1,6 @@
 /*
 
-ch03-example2.c - demonstrate the use of shared libraries
+ch04-example2.c - demonstrate the use of shared libraries
 by: Michael Born
 Date: 2019
 
