@@ -1,11 +1,11 @@
 ************ FILE TYPE INFORMATION ************
 
-ch08-SalesFigures: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=2cbea13e6c8892f91913abf4c803622235770c2a, not stripped
+ch08-SalesFigures: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=5ad7130f5a710b1e741b29af3d716c007e95309d, not stripped
 
 
 ************ STRINGS INFORMATION ************
 
-/lib64/ld-linux-x86-64.so.2  |  b"5w  |  libc.so.6  |  gets  |  exit  |  fopen  |  puts  |  __stack_chk_fail  |  putchar  |  printf  |  fgetc  |  fclose  |  strcmp  |  __libc_start_main  |  __gmon_start__  |  GLIBC_2.4  |  GLIBC_2.2.5  |  %"	   |  AWAVA  |  AUATL  |  []A\A]A^A_  |  Hello, and welcome to Chapter 08!  |  Please enter the password to connect:   |  You entered:   |  Password is correct!  |  data.dat  |  Cannot open file.  |  Please make sure the file exists and the user has the correct permissions  |  Reading file...  |  Sorry, password incorrect....  |  ;*3$"  |  GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609  |  crtstuff.c  |  __JCR_LIST__  |  deregister_tm_clones  |  __do_global_dtors_aux  |  completed.7594  |  __do_global_dtors_aux_fini_array_entry  |  frame_dummy  |  __frame_dummy_init_array_entry  |  ch08-SalesFigures.c  |  __FRAME_END__  |  __JCR_END__  |  __init_array_end  |  _DYNAMIC  |  __init_array_start  |  __GNU_EH_FRAME_HDR  |  _GLOBAL_OFFSET_TABLE_  |  __libc_csu_fini  |  putchar@@GLIBC_2.2.5  |  _ITM_deregisterTMCloneTable  |  puts@@GLIBC_2.2.5  |  _edata  |  fclose@@GLIBC_2.2.5  |  __stack_chk_fail@@GLIBC_2.4  |  printf@@GLIBC_2.2.5  |  fgetc@@GLIBC_2.2.5  |  __libc_start_main@@GLIBC_2.2.5  |  __data_start  |  strcmp@@GLIBC_2.2.5  |  __gmon_start__  |  __dso_handle  |  _IO_stdin_used  |  gets@@GLIBC_2.2.5  |  __libc_csu_init  |  __bss_start  |  main  |  fopen@@GLIBC_2.2.5  |  _Jv_RegisterClasses  |  exit@@GLIBC_2.2.5  |  __TMC_END__  |  _ITM_registerTMCloneTable  |  .symtab  |  .strtab  |  .shstrtab  |  .interp  |  .note.ABI-tag  |  .note.gnu.build-id  |  .gnu.hash  |  .dynsym  |  .dynstr  |  .gnu.version  |  .gnu.version_r  |  .rela.dyn  |  .rela.plt  |  .init  |  .plt.got  |  .text  |  .fini  |  .rodata  |  .eh_frame_hdr  |  .eh_frame  |  .init_array  |  .fini_array  |  .jcr  |  .dynamic  |  .got.plt  |  .data  |  .bss  |  .comment  |  
+/lib64/ld-linux-x86-64.so.2  |  libc.so.6  |  gets  |  exit  |  fopen  |  puts  |  __stack_chk_fail  |  putchar  |  printf  |  fgetc  |  fclose  |  strcmp  |  __libc_start_main  |  __gmon_start__  |  GLIBC_2.4  |  GLIBC_2.2.5  |  %"	   |  AWAVA  |  AUATL  |  []A\A]A^A_  |  Hello, and welcome to Chapter 08!  |  Please enter the password to connect:   |  You entered:   |  Password is correct!  |  .data.dat  |  Cannot open file.  |  Please make sure the file exists and the user has the correct permissions  |  Reading file...  |  Sorry, password incorrect....  |  ;*3$"  |  GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609  |  crtstuff.c  |  __JCR_LIST__  |  deregister_tm_clones  |  __do_global_dtors_aux  |  completed.7594  |  __do_global_dtors_aux_fini_array_entry  |  frame_dummy  |  __frame_dummy_init_array_entry  |  ch08-SalesFigures.c  |  __FRAME_END__  |  __JCR_END__  |  __init_array_end  |  _DYNAMIC  |  __init_array_start  |  __GNU_EH_FRAME_HDR  |  _GLOBAL_OFFSET_TABLE_  |  __libc_csu_fini  |  putchar@@GLIBC_2.2.5  |  _ITM_deregisterTMCloneTable  |  puts@@GLIBC_2.2.5  |  _edata  |  fclose@@GLIBC_2.2.5  |  __stack_chk_fail@@GLIBC_2.4  |  printf@@GLIBC_2.2.5  |  fgetc@@GLIBC_2.2.5  |  __libc_start_main@@GLIBC_2.2.5  |  __data_start  |  strcmp@@GLIBC_2.2.5  |  __gmon_start__  |  __dso_handle  |  _IO_stdin_used  |  gets@@GLIBC_2.2.5  |  __libc_csu_init  |  __bss_start  |  main  |  fopen@@GLIBC_2.2.5  |  _Jv_RegisterClasses  |  exit@@GLIBC_2.2.5  |  __TMC_END__  |  _ITM_registerTMCloneTable  |  .symtab  |  .strtab  |  .shstrtab  |  .interp  |  .note.ABI-tag  |  .note.gnu.build-id  |  .gnu.hash  |  .dynsym  |  .dynstr  |  .gnu.version  |  .gnu.version_r  |  .rela.dyn  |  .rela.plt  |  .init  |  .plt.got  |  .text  |  .fini  |  .rodata  |  .eh_frame_hdr  |  .eh_frame  |  .init_array  |  .fini_array  |  .jcr  |  .dynamic  |  .got.plt  |  .data  |  .bss  |  .comment  |  
 
 ************ READELF ALL ************
 
@@ -258,7 +258,7 @@ Displaying notes found at file offset 0x00000254 with length 0x00000020:
 Displaying notes found at file offset 0x00000274 with length 0x00000024:
   Owner                 Data size	Description
   GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
-    Build ID: 2cbea13e6c8892f91913abf4c803622235770c2a
+    Build ID: 5ad7130f5a710b1e741b29af3d716c007e95309d
 
 
 ************ OBJDUMP EXECUTABLE ************
@@ -312,14 +312,16 @@ Disassembly of section .note.gnu.build-id:
   40027e:	00 00                	add    BYTE PTR [rax],al
   400280:	47                   	rex.RXB
   400281:	4e 55                	rex.WRX push rbp
-  400283:	00 2c be             	add    BYTE PTR [rsi+rdi*4],ch
-  400286:	a1 3e 6c 88 92 f9 19 	movabs eax,ds:0xab1319f992886c3e
-  40028d:	13 ab 
-  40028f:	f4                   	hlt    
-  400290:	c8 03 62 22          	enter  0x6203,0x22
-  400294:	35                   	.byte 0x35
-  400295:	77 0c                	ja     4002a3 <_init-0x345>
-  400297:	2a                   	.byte 0x2a
+  400283:	00 5a d7             	add    BYTE PTR [rdx-0x29],bl
+  400286:	13 0f                	adc    ecx,DWORD PTR [rdi]
+  400288:	5a                   	pop    rdx
+  400289:	71 0b                	jno    400296 <_init-0x352>
+  40028b:	1e                   	(bad)  
+  40028c:	74 1b                	je     4002a9 <_init-0x33f>
+  40028e:	29 af 3d 71 6c 00    	sub    DWORD PTR [rdi+0x6c713d],ebp
+  400294:	7e 95                	jle    40022b <_init-0x3bd>
+  400296:	30                   	.byte 0x30
+  400297:	9d                   	popf   
 
 Disassembly of section .gnu.hash:
 
@@ -983,13 +985,13 @@ Disassembly of section .rodata:
   400a53:	72 72                	jb     400ac7 <_IO_stdin_used+0xe7>
   400a55:	65 63 74 21 00       	movsxd esi,DWORD PTR gs:[rcx+riz*1+0x0]
   400a5a:	72 00                	jb     400a5c <_IO_stdin_used+0x7c>
-  400a5c:	64 61                	fs (bad) 
-  400a5e:	74 61                	je     400ac1 <_IO_stdin_used+0xe1>
-  400a60:	2e 64 61             	cs fs (bad) 
-  400a63:	74 00                	je     400a65 <_IO_stdin_used+0x85>
-  400a65:	00 00                	add    BYTE PTR [rax],al
-  400a67:	00 0a                	add    BYTE PTR [rdx],cl
-  400a69:	0a 43 61             	or     al,BYTE PTR [rbx+0x61]
+  400a5c:	2e 64 61             	cs fs (bad) 
+  400a5f:	74 61                	je     400ac2 <_IO_stdin_used+0xe2>
+  400a61:	2e 64 61             	cs fs (bad) 
+  400a64:	74 00                	je     400a66 <_IO_stdin_used+0x86>
+  400a66:	00 00                	add    BYTE PTR [rax],al
+  400a68:	0a 0a                	or     cl,BYTE PTR [rdx]
+  400a6a:	43 61                	rex.XB (bad) 
   400a6c:	6e                   	outs   dx,BYTE PTR ds:[rsi]
   400a6d:	6e                   	outs   dx,BYTE PTR ds:[rsi]
   400a6e:	6f                   	outs   dx,DWORD PTR ds:[rsi]
