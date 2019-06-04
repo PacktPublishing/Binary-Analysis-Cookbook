@@ -1,13 +1,13 @@
-************ FILE TYPE INFORMATION ************
+*** FILE TYPE INFORMATION ***
 
 ch08-SalesFigures: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/l, for GNU/Linux 2.6.32, BuildID[sha1]=ac495819e07c9d6c90520cce4a86fc1eabf01414, not stripped
 
 
-************ STRINGS INFORMATION ************
+*** STRINGS INFORMATION ***
 
 /lib64/ld-linux-x86-64.so.2  |  libc.so.6  |  gets  |  exit  |  fopen  |  puts  |  putchar  |  printf  |  fgetc  |  fclose  |  strcmp  |  __libc_start_main  |  __gmon_start__  |  GLIBC_2.2.5  |  UH-x  |  =Q	   |  AWAVA  |  AUATL  |  []A\A]A^A_  |  Hello, and welcome to Chapter 08!  |  Please enter the password to connect:   |  You entered:   |  Password is correct!  |  .data.dat  |  Cannot open file.  |  Please make sure the file exists and the user has the correct permissions  |  Reading file...  |  Sorry, password incorrect....  |  ;*3$"  |  GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.11) 5.4.0 20160609  |  crtstuff.c  |  __JCR_LIST__  |  deregister_tm_clones  |  __do_global_dtors_aux  |  completed.7594  |  __do_global_dtors_aux_fini_array_entry  |  frame_dummy  |  __frame_dummy_init_array_entry  |  ch08-SalesFigures.c  |  __FRAME_END__  |  __JCR_END__  |  __init_array_end  |  _DYNAMIC  |  __init_array_start  |  __GNU_EH_FRAME_HDR  |  _GLOBAL_OFFSET_TABLE_  |  __libc_csu_fini  |  putchar@@GLIBC_2.2.5  |  _ITM_deregisterTMCloneTable  |  puts@@GLIBC_2.2.5  |  _edata  |  fclose@@GLIBC_2.2.5  |  printf@@GLIBC_2.2.5  |  fgetc@@GLIBC_2.2.5  |  __libc_start_main@@GLIBC_2.2.5  |  __data_start  |  strcmp@@GLIBC_2.2.5  |  __gmon_start__  |  __dso_handle  |  _IO_stdin_used  |  gets@@GLIBC_2.2.5  |  __libc_csu_init  |  __bss_start  |  main  |  fopen@@GLIBC_2.2.5  |  _Jv_RegisterClasses  |  exit@@GLIBC_2.2.5  |  __TMC_END__  |  _ITM_registerTMCloneTable  |  .symtab  |  .strtab  |  .shstrtab  |  .interp  |  .note.ABI-tag  |  .note.gnu.build-id  |  .gnu.hash  |  .dynsym  |  .dynstr  |  .gnu.version  |  .gnu.version_r  |  .rela.dyn  |  .rela.plt  |  .init  |  .plt.got  |  .text  |  .fini  |  .rodata  |  .eh_frame_hdr  |  .eh_frame  |  .init_array  |  .fini_array  |  .jcr  |  .dynamic  |  .got.plt  |  .data  |  .bss  |  .comment  |  
 
-************ READELF ALL ************
+*** READELF ALL ***
 
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
@@ -256,7 +256,7 @@ Displaying notes found at file offset 0x00000274 with length 0x00000024:
     Build ID: ac495819e07c9d6c90520cce4a86fc1eabf01414
 
 
-************ OBJDUMP EXECUTABLE ************
+*** OBJDUMP EXECUTABLE ***
 
 
 ch08-SalesFigures:     file format elf64-x86-64

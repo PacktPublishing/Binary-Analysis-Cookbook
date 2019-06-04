@@ -19,28 +19,28 @@ else
     echo |tee -a $OUTPUTFILE;
 
    # FILE
-    echo "************ FILE TYPE INFORMATION ************" | tee $OUTPUTFILE;
+    echo "*** FILE TYPE INFORMATION ***" | tee $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE
     file $BINARY |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
 
     # STRINGS
-    echo "************ STRINGS INFORMATION ************" |tee -a $OUTPUTFILE;
+    echo "*** STRINGS INFORMATION ***" |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
     strings -s "  |  " $BINARY |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE
 
     # READELF
-    echo "************ READELF ALL ************" |tee -a $OUTPUTFILE;
+    echo "*** READELF ALL ***" |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
     readelf -a -W $BINARY |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
 
     # OBJDUMP
-    echo "************ OBJDUMP EXECUTABLE ************" |tee -a $OUTPUTFILE;
+    echo "*** OBJDUMP EXECUTABLE ***" |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE
     objdump -D -M intel $BINARY |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
