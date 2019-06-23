@@ -15,12 +15,12 @@ signature = {'4883c03b', '687361622f2f2f2f6e69622f2f2f2f2f', binascii.hexlify('/
 inputFile = open(sys.argv[1],'rb')
 
 hexInput = binascii.hexlify(inputFile.read())
-
+j = 0
 for i in signature:
   if i in hexInput:
     print 'SIGNATURE DETECTED!!!!'
     print 'Signature found is: %s' % i
-
-  else:
-    print '\n\nNo Signatures detect...'
+    j += 1
+if j == 0:
+  print '\n\nNo Signatures detect...\n\n'
 sys.exit(0)
