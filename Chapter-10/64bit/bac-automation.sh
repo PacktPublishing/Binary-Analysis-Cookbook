@@ -42,7 +42,7 @@ else
     # OBJDUMP
     echo "*** OBJDUMP EXECUTABLE ***" |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE
-    objdump -D -M intel $BINARY |tee -a $OUTPUTFILE;
+    objdump -d -M intel $BINARY |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
     echo |tee -a $OUTPUTFILE;
 fi

