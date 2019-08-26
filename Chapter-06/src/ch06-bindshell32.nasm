@@ -4,43 +4,6 @@
 ; by Michael Born (@blu3gl0w13)
 ; Date: 2019
 ; 
-; #define __NR_socketcall         102 (0x66)
-; (/usr/include/i386-linux-gnu/asm/unistd_32.h)
-;
-; int socketcall(int call, unsigned long *args);
-;
-; int socket(int domain, int type, int protocol);
-;
-; #define SYS_SOCKET   1    /* sys_socket(2)
-; (/usr/include/linux/net.h)
-;
-; AF_INET (2)            IPv4 Internet protocols
-; SOCK_STREAM (1)  Provides sequenced, reliable, 
-; two-way, connection-based byte streams.  
-; An out-of-band data transmission mechanism 
-; may be supported.
-; (man socket 2)
-;
-; tcp	6  TCP # transmission control protocol
-; (cat /etc/protocols)
-;
-; To accept connections, the following steps are performed:
-;
-;  1.  A socket is created with socket(2).
-;
-;  2.  The socket is bound to a local address using bind(2), 
-;      so that other sockets may be connect(2)ed to it.
-;
-;  3.  A willingness to accept incoming connections and a 
-;      queue limit for incoming connections are specified with listen().
-;
-;  4.  Connections are accepted with accept(2).
-;
-;
-; We'll also have to redirect std in, out, error
-; through the acceptfd in order to launch
-; ////bin/bash
-;
 ;---------------------------------------------------------------------------
 
 global _start
